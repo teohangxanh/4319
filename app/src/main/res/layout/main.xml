@@ -59,12 +59,31 @@
 
     </TableLayout>
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/buttonInstruction"
-        android:textColor="levelInstruction" />
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="Please choose the difficulty" />
+
+    <TextView
+        android:id="@+id/randomNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/appTitleText"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:text="A random number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Drag and drop in the box below to represent the number"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
 
 </LinearLayout>
