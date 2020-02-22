@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Factorization</string>
+    <string name="levelButton1">Easy</string>
+    <string name="levelButton2">Medium</string>
+    <string name="levelButton3">Difficult</string>
+    <string name="buttonInstruction">Please choose the level of difficulty</string>
+</resources>
