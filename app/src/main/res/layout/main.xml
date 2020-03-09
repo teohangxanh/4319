@@ -28,33 +28,31 @@
             <Button
                 android:id="@+id/easyBtn"
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_marginHorizontal="10dp"
+                android:onClick="onClick"
                 android:contentDescription="@string/levelButton1"
-                android:background="@color/levelButton"
-                android:textColor="@color/appBackground"
-                android:text="Easy" />
+                android:background="@drawable/egg"
+                android:textColor="@color/appBackground"/>
 
 
             <Button
                 android:id="@+id/mediumBtn"
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_marginHorizontal="10dp"
                 android:contentDescription="@string/levelButton2"
-                android:background="@color/levelButton"
-                android:textColor="@color/appBackground"
-                android:text="Medium" />
+                android:background="@drawable/chicken"
+                android:textColor="@color/appBackground"/>
 
             <Button
                 android:id="@+id/difficultBtn"
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_marginHorizontal="10dp"
                 android:contentDescription="@string/levelButton3"
-                android:background="@color/levelButton"
-                android:textColor="@color/appBackground"
-                android:text="Difficult" />
+                android:background="@drawable/tiger"
+                android:textColor="@color/appBackground"/>
         </TableRow>
 
     </TableLayout>
@@ -74,7 +72,7 @@
         android:textColor="@color/appTitleText"
         android:layout_marginTop="20dp"
         android:textSize="30dp"
-        android:text="A random number" />
+        android:text="" />
 
     <TextView
         android:layout_width="match_parent"
