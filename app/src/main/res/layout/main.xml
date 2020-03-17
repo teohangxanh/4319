@@ -61,15 +61,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:text="Please choose the difficulty" />
+        android:layout_marginHorizontal="20dp"
+        android:text="Choose an avatar associated with your level"
+        android:gravity="center_horizontal"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/randomNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
+        android:gravity="center_horizontal"
         android:textColor="@color/appTitleText"
         android:layout_marginTop="20dp"
         android:textSize="30dp"
@@ -78,10 +79,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="10dp"
         android:layout_marginHorizontal="20dp"
         android:text="Drag and drop in the box below to represent the number"
-        android:textAlignment="center"
+        android:gravity="center_horizontal"
         android:textSize="20dp" />
 
     <TextView
@@ -89,7 +90,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:textAlignment="center"
+        android:gravity="center_horizontal"
         android:text="TextView"
         android:textColor="@color/Right"
         tools:text="Green is right" />
@@ -99,8 +100,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:textAlignment="center"
+        android:gravity="center_horizontal"
         android:text="Red is wrong"
         android:textColor="@color/Wrong" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="263dp"
+        android:text="This is where you drag and drop a rectangle" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:textColor="@color/appTitleText"
+        android:text="Retry your answer" />
 
 </LinearLayout>
