@@ -8,5 +8,6 @@
     <color name="levelButton">#091DDF</color>
     <color name="levelInstruction">#646464</color>
     <color name="Right">#00FF00</color>
-    <color name="Wrong">#FF0000</color>
+    <color name="Yellow">#000000</color>
+
 </resources>
