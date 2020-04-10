@@ -114,6 +114,7 @@
         android:text="This is where the int appears" />
 
     <TextView
+        android:id="@+id/inst"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
