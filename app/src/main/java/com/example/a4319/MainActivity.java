@@ -15,7 +15,7 @@ import java.util.Random;
 public class MainActivity extends Activity implements View.OnClickListener {
     TextView textView;
     Button easy, medium, hard;
-    Random myRandom;
+    final Random myRandom = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         easy.setOnClickListener(this);
         medium.setOnClickListener(this);
         hard.setOnClickListener(this);
-        final Random myRandom = new Random();
+
         final TextView randomNumber = findViewById(R.id.randomNumber);
     }
 
