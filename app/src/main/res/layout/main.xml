@@ -66,8 +66,9 @@
                 android:layout_height="30dp"
                 android:layout_marginHorizontal="10dp"
                 android:text="2-digit"
-                android:textAlignment="center"
                 android:textSize="20dp"
+                android:textColor="@color/hint"
+                android:textAlignment="center"
                 android:gravity="center_horizontal" />
 
             <TextView
@@ -75,8 +76,9 @@
                 android:layout_height="30dp"
                 android:layout_marginHorizontal="10dp"
                 android:text="3-digit"
-                android:textAlignment="center"
                 android:textSize="20dp"
+                android:textColor="@color/hint"
+                android:textAlignment="center"
                 android:gravity="center_horizontal" />
 
             <TextView
@@ -84,15 +86,14 @@
                 android:layout_height="30dp"
                 android:layout_marginHorizontal="10dp"
                 android:text="4-digit"
-                android:textAlignment="center"
                 android:textSize="20dp"
+                android:textColor="@color/hint"
+                android:textAlignment="center"
                 android:gravity="center_horizontal" />
 
         </TableRow>
 
     </TableLayout>
-
-
 
     <TextView
         android:layout_width="match_parent"
@@ -100,7 +101,8 @@
         android:layout_marginHorizontal="20dp"
         android:gravity="center_horizontal"
         android:text="Choose an avatar"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:textColor="@color/hint" />
 
     <TextView
         android:id="@+id/randomNumber"
@@ -111,7 +113,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginHorizontal="30dp"
         android:textSize="25dp"
-        android:text="This is where the int appears" />
+        android:text="This is where the number appears" />
 
     <TextView
         android:id="@+id/inst"
@@ -121,7 +123,29 @@
         android:layout_marginHorizontal="20dp"
         android:text="Drag and drop in the box below to represent the number"
         android:gravity="center_horizontal"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:textColor="@color/hint"/>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center"
+        android:layout_height="240dp"
+        android:textSize="30dp"
+        android:textColor="@color/appTitleText"
+        android:text="This is where you drag and drop a rectangle" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginHorizontal="100dp"
+        android:textColor="#FF000000"
+        android:background="#FFFFFF00"
+        android:text="TRY AGAIN" />
+
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -146,24 +170,5 @@
             android:textColor="#FF0000"
             android:gravity="center_horizontal" />
     </TableRow>
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
-        android:gravity="center"
-        android:layout_height="263dp"
-        android:textSize="30dp"
-        android:textColor="@color/appTitleText"
-        android:text="This is where you drag and drop a rectangle" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="100dp"
-        android:textColor="#FF000000"
-        android:background="#FFFFFF00"
-        android:text="TRY AGAIN" />
 
 </LinearLayout>
