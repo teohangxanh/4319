@@ -39,18 +39,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View v){
         switch (v.getId()){
             case R.id.easyBtn:
-                // Generate a random number range [10, 99]
-                textView.setText(String.valueOf(myRandom.nextInt(99 - 10) + 10 + 1));
+                // Generate a random number range [1, 10]
+                textView.setText(String.valueOf(myRandom.nextInt(11 - 1) + 1));
                 break;
 
             case R.id.mediumBtn:
-                // Generate a random number range [100, 999]
-                textView.setText(String.valueOf(myRandom.nextInt(999 - 100) + 100 + 1));
+                // Generate a random number range [11, 50]
+                textView.setText(String.valueOf(myRandom.nextInt(51 - 11) + 11));
                 break;
 
             case R.id.difficultBtn:
-                // Generate a random number range [1000, 9999]
-                textView.setText(String.valueOf(myRandom.nextInt(9999 - 1000) + 1000 + 1));
+                // Generate a random number range [51, 100]
+                textView.setText(String.valueOf(myRandom.nextInt(101 - 51) + 51));
                 break;
 
             default:
