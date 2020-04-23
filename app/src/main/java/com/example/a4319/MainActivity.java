@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -27,10 +28,29 @@ public class MainActivity extends Activity implements View.OnClickListener {
     Button easy, medium, hard;
     final Random myRandom = new Random();
     List<Integer> data = new ArrayList<Integer>();
+
+    ImageView imageView;
+    Bitmap bitmap;
+    Canvas canvas;
+    Paint paint;
+    float downx = 0, downy = 0, upx = 0, upy = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+        imageView = (ImageView) this.findViewById(R.id.myRectangleView);
+        float dw = imageView.getWidth();
+        float dh = imageView.getHeight();
+
+        bitmap = Bitmap.createBitmap((int) dw, (int) dh,
+                Bitmap.Config.ARGB_8888);
+        canvas = new Canvas(bitmap);
+        paint = new Paint();
+        paint.setColor(Color.GREEN);
+        imageView.setImageBitmap(bitmap);
+
+        imageView.setOnTouchListener((View.OnTouchListener) this);
 
         textView = (TextView) findViewById(R.id.randomNumber);
         easy = (Button) findViewById(R.id.easyBtn);
@@ -78,4 +98,25 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
     }
 
+    public void onTouch(View v, MotionEvent event) {
+        int action = event.getAction();
+        switch (action) {
+            case MotionEvent.ACTION_DOWN:
+                downx = event.getX();
+                downy = event.getY();
+                break;
+            case MotionEvent.ACTION_MOVE:
+                break;
+            case MotionEvent.ACTION_UP:
+                upx = event.getX();
+                upy = event.getY();
+                canvas.drawLine(downx, downy, upx, upy, paint);
+                imageView.invalidate();
+                break;
+            case MotionEvent.ACTION_CANCEL:
+                break;
+            default:
+                break;
+        }
+    }
 }
