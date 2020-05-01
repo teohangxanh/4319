@@ -29,16 +29,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
     final Random myRandom = new Random();
     List<Integer> data = new ArrayList<Integer>();
 
-    DrawingView dv ;
-    private Paint mPaint;
+//    DrawingView dv ;
+//    private Paint mPaint;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        dv = new DrawingView(this);
+        setContentView(R.layout.main);
+        /*dv = new DrawingView(this);
         setContentView(dv);
-
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
         mPaint.setDither(true);
@@ -46,7 +45,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
-        mPaint.setStrokeWidth(12);
+        mPaint.setStrokeWidth(12);*/
 
         textView = (TextView) findViewById(R.id.randomNumber);
         easy = (Button) findViewById(R.id.easyBtn);
@@ -94,7 +93,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
     }
 
-    public class DrawingView extends View {
+    /*public class DrawingView extends View {
 
         public int width;
         public  int height;
@@ -190,5 +189,5 @@ public class MainActivity extends Activity implements View.OnClickListener {
             }
             return true;
         }
-    }
+    }*/
 }
